@@ -1,0 +1,1 @@
+export const DEBOUNCE_VISIBLE_TIME = 200;

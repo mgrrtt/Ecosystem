@@ -1,0 +1,91 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+
+  @media(min-width: 768px) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 65px;
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: 1024px) {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    margin-bottom: 50px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 1250px) {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 60px;
+  }
+
+  &__img {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 37px;
+    margin-right: 18px;
+    border-radius: 15px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+
+    @media(min-width: 768px) {
+      display: block;
+      width: 56px;
+      height: 56px;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    @media(min-width: 1024px) {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #303844;
+
+    @media(min-width: 768px) {
+      text-align: left;
+    }
+
+    @media(min-width: 1024px) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  &__subtext {
+    margin-bottom: 25px;
+
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #303844;
+
+    @media(min-width: 768px) {
+      text-align: left;
+    }
+
+    @media(min-width: 1024px) {
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+}

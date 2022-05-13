@@ -1,0 +1,74 @@
+.links {
+  position: relative;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  @media(min-width: 768px) {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+
+  &__hide {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+
+    background-color: #ffffff;
+
+    @media(min-width: 768px) {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      z-index: 10;
+    }
+  }
+
+  &__link {
+    flex: 0 0 100%;
+    margin-bottom: 9px;
+
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration: none;
+
+    color: #aaafb7;
+
+    &:hover {
+      color: #006eff;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_toggle {
+      height: 22px;
+
+      &::after {
+        position: absolute;
+        top: 3px;
+
+        content: url(../../img/arrow.png);
+        margin-left: 8px;
+
+        transform: rotate(0deg);
+        transition: .3s;
+      }
+    }
+
+    &_act {
+      &::after {
+        top: -4px;
+
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}

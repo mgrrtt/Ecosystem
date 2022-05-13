@@ -1,0 +1,20 @@
+.btn {
+  display: block;
+  width: 90%;
+  margin: 40px auto 100px;
+  padding: 12px 0;
+  border-radius: 50px;
+
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+
+  color: #303844;
+  background-color: #f2f2f2;
+
+  @media(min-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}

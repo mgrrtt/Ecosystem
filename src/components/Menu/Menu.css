@@ -1,0 +1,61 @@
+.eco-menu {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  margin: 40px 0 70px;
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+
+  @media(min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  @media(min-width: 1024px) {
+    margin-bottom: 98px;
+  }
+
+  @media(min-width: 1250px) {
+    justify-content: center;
+    margin-bottom: 106px;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 30px;
+
+    font-size: 17px;
+    line-height: 26px;
+    text-decoration: none;
+
+    color: #aaafb7;
+
+    @media(min-width: 768px) {
+      margin-right: 40px;
+    }
+
+    &:first-child {
+      margin-left: 30px;
+
+      @media(min-width: 768px) {
+        margin-left: 40px;
+      }
+
+      @media(min-width: 1024px) {
+        margin-left: 70px;
+      }
+    }
+
+    &:last-child {
+      min-width: 150px;
+    }
+
+    &_act {
+      color: #303844;
+    }
+  }
+}

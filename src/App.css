@@ -1,0 +1,76 @@
+.app {
+  &__section {
+    margin-bottom: 90px;
+
+    @media(min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 40px;
+      margin-bottom: 0;
+    }
+
+    @media(min-width: 1024px) {
+      padding: 0 108px;
+    }
+
+    @media(min-width: 1440px) {
+      max-width: 1272px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  &__section-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    @media(min-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: start;
+      box-sizing: border-box;
+    }
+  }
+
+  &__btn-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 24px;
+
+    @media(min-width: 768px) {
+      padding: 0;
+    }
+  }
+}
+
+.slick-slider {
+  padding: 24px 24px 0;
+
+  @media(min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.slick-dots {
+  position: static !important;
+
+  & li {
+    width: 25px;
+    height: 3px;
+    margin: 0px 2px;
+    border-radius: 10px;
+
+    background: #aaafb7;
+
+    &.slick-active {
+      background: #303844;
+    }
+  }
+}
+
+.slick-dots li button:before {
+  content: '' !important;
+}
