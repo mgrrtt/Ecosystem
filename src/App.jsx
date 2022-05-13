@@ -27,10 +27,14 @@ const App = () => {
   const [data, setData] = useState([]);
 
   const getData = async () => {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
+    try {
+      const response = await fetch(apiUrl());
+      const data = await response.json();
 
-    setData(data);
+      setData(data.apps);
+    } catch {
+      setData([]);
+    }
   }
 
   useEffect(() => {
